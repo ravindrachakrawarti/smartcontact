@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8"/>
+<title>This is about Page</title>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+	<section>
+		
+		
+		<h1>Enter your Amount</h1>
+		
+		<input id="payment_field"  type="text" class="form-control" placeholder="Enter amount herer">
+		
+		
+		<div   class="container text-center mt-3">
+			
+			<button  onclick="paymentStart()" class="btn btn-success btn-block">Pay</button>
+		</div>
+	</section>
+	
+
+</body>
+</html>

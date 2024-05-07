@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8"/>
+<title>This is about Page</title>
+</head>
+<body>
+	<section>
+		<div class="card mr-3 ml-3">
+			<div class="card-body">
+				<div class="container text-center">
+				 <h3>Admin</h3>
+				 
+				 <img class="abc" style="width: 100px;" th:src="@{/image/abc.jpg}">
+				 
+					  <h3 class="mt-3" >  
+						  <span th:text="${view.name}"></span>
+						 
+					  </h3>
+				<form>
+					
+						
+					
+					
+			
+				
+				<table class="table">
+
+  <tbody>
+    <tr>
+		<th rowspan="5"> <img class="imgebb" style="width: 200px;" th:src="@{/image/bb.jpg}"></th>
+      <th scope="row"  >Id</th>
+      <td th:text="@{'SCM2023'}+${view.id}">Mark</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Name</th>
+      <td th:text="${view.name}">Jacob</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td colspan="2" th:text="${view.email}">Larry the Bird</td>
+
+    </tr>
+     <tr>
+      <th scope="row">Role</th>
+      <td colspan="2" th:text="${view.role}">Larry the Bird</td>
+
+    </tr>
+     <tr>
+      <th scope="row">about</th>
+      <td colspan="2" th:text="${view.about}"></td>
+
+    </tr>
+  </tbody>
+</table>
+				</li>		
+	</ul>			
+		
+	</form>			</div>
+				
+				
+				</div></div></div>
+        
+	</section>
+	
+
+</body>
+</html>
